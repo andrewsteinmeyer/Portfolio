@@ -1,0 +1,96 @@
+
+
+.Header {
+    width: 100%;
+    padding: 24px 0px;
+    margin: 0px;
+    z-index: 100;
+    background-color: #4274F0 !important;
+}
+
+.HeaderGroup {
+    max-width: 1200px;
+    margin: 0 auto;
+    text-align: right;
+    display: grid;
+    grid-template-columns: 5fr 1fr;
+    align-items: right;
+    justify-items: right;
+}
+
+.Header a {
+    color: white;
+    font-weight: 500;
+    font-size: 18px;
+    margin-right: 32px !important;
+}
+
+.Header a:hover {
+    background-color: #4274F0 !important;
+    color: rgba(255,255,255, 0.9) !important;
+    font-weight: 500;
+    font-size: 18px;
+    margin-right: 24px;
+}
+
+.Header button {
+    padding: 8px 20px;
+    font-size: 20px;
+    background: #56CCF2;
+    border-radius: 10px;
+    border: none;
+    font-weight: 700;
+    outline: none;
+    cursor: pointer;
+}
+
+.navbar-menu {
+    box-shadow: none !important;
+}
+
+.Hero a {
+    transition: 0.8s cubic-bezier(0.2, 0.8, 0.2, 1);
+  }
+  
+  .Hero a:hover {
+    background: white;
+    color: black;
+  }
+
+@media (max-width: 640px) {
+    .Header {
+        padding: 0px 0;
+        border: none;
+    }
+
+    .navbar-menu {
+        box-shadow: none !important;
+    }
+
+    .Header .navbar-item a {
+        color: black !important;
+        background-color: white;
+        font-weight: 400;
+        font-size: 20px;
+        display: flex;
+        justify-content: center;
+    }
+
+    .Header .navbar-item a:focus {
+        color: black !important;
+        background-color: white !important;
+        font-weight: 400;
+        font-size: 20px;
+        display: flex;
+        justify-content: center;
+    }
+
+    .Header .navbar-item a:visited {
+        color: black !important;
+        background-color: white !important;
+        font-weight: 400;
+        font-size: 20px;
+        display: flex;
+        justify-content: center;
+    }
+}

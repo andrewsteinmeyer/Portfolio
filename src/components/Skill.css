@@ -1,0 +1,14 @@
+
+
+.Skill > .responsive-img {
+    margin: 0 auto;
+    max-height: 80px;
+    padding-bottom: 10px;
+    text-align: left;
+    vertical-align: middle;
+    display: table-cell;
+  }
+
+.Skill {
+    opacity: 0;
+}

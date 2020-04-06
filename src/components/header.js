@@ -1,42 +1,36 @@
-import { Link } from "gatsby"
-import PropTypes from "prop-types"
-import React from "react"
+import React from 'react'
+import Link from 'gatsby-link'
 
-const Header = ({ siteTitle }) => (
-  <header
-    style={{
-      background: `rebeccapurple`,
-      marginBottom: `1.45rem`,
-    }}
-  >
-    <div
-      style={{
-        margin: `0 auto`,
-        maxWidth: 960,
-        padding: `1.45rem 1.0875rem`,
-      }}
-    >
-      <h1 style={{ margin: 0 }}>
-        <Link
-          to="/"
-          style={{
-            color: `white`,
-            textDecoration: `none`,
-          }}
-        >
-          {siteTitle}
-        </Link>
-      </h1>
-    </div>
-  </header>
-)
+import './header.css'
+class Header extends React.Component {
 
-Header.propTypes = {
-  siteTitle: PropTypes.string,
-}
+  handleClick = (event) => {
+    document.querySelector('.navbar-menu').classList.toggle('is-active');
+  }
 
-Header.defaultProps = {
-  siteTitle: ``,
+  render() {
+    return (
+      <nav className="Header navbar" role="navigation" aria-label="main navigation">
+      <div className="container nav-container">
+        <div className="navbar-brand">
+          <a className="navbar-item" href="/">ANDREW STEINMEYER</a>
+          {/* <a className="navbar-burger" onClick={this.handleClick} role="button" aria-label="menu" aria-expanded="false" data-target="#navMenu">
+            <span aria-hidden="true"></span>
+            <span aria-hidden="true"></span>
+            <span aria-hidden="true"></span>
+          </a> */}
+        </div>
+        {/* <div className="navbar-menu" id="navMenu">
+          <div className="navbar-start"></div>
+          <div className="navbar-end">
+            <div className="navbar-item"><Link to="/#my-work">Portfolio</Link></div>
+            <div className="navbar-item"><Link to="/#my-cool-header">Contact</Link></div>
+          </div>
+        </div> */}
+      </div>
+    </nav>
+    )
+  }
 }
 
 export default Header
