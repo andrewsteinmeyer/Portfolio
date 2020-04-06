@@ -216,6 +216,19 @@ input[type=text], input[type=email], textarea {
   margin-bottom: 3px;
 }
 
+::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+  color: #4C76E8;
+  opacity: 1; /* Firefox */
+}
+
+:-ms-input-placeholder { /* Internet Explorer 10-11 */
+  color: #4C76E8;
+}
+
+::-ms-input-placeholder { /* Microsoft Edge */
+  color: #4C76E8;
+}
+
 @media (max-width: 640px) {
   .HeroGroup {
     padding: 220px 20px;
