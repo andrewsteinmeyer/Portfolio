@@ -8,7 +8,8 @@ import Wedge from "../components/Wedge"
 import Card from "../components/Card"
 
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faArrowRight, faCopyright } from '@fortawesome/free-solid-svg-icons'
+import { faArrowRight, faEnvelope } from '@fortawesome/free-solid-svg-icons'
+import { faLinkedinIn, faGithubAlt } from '@fortawesome/free-brands-svg-icons'
 
 import $ from 'jquery';
 
@@ -37,7 +38,7 @@ const IndexPage = () => (
         <div className="sectionText animated fade-in-up">
           <div className="columns is-centered">
             <div className="column is-four-fifths">
-              <p>I've always had a passion for challenging myself and learning new things.  I hold over a decade of diverse development experience in front-end, back-end and iOS applications.  With a background in business and a career in technology, I get excited about all aspects of product development from strategy and concepting to design and development.</p>
+              <p>I've always had a passion for learning new things.  I hold over a decade of diverse development experience in front-end, back-end and iOS applications.  With a background in business and a career in technology, I get excited about all aspects of product development from strategy and concepting to design and development.</p>
             </div>
           </div>
         </div>
@@ -52,19 +53,19 @@ const IndexPage = () => (
             <Card 
               title="SmartDash"
               caption="Smart kan-ban task system."
-              link="https://github.com/andrewsteinmeyer/Dashboard"
+              link="https://github.com/andrewsteinmeyer/SmartDash"
               text="Javascript"
               image={require('../images/mountains.png')} />
             <Card 
               title="ePortal"
               caption="Think Periscope meets QVC."
-              link="https://github.com/andrewsteinmeyer/ePortal"
+              link="https://github.com/andrewsteinmeyer/Portal_Swift"
               text="Swift"
               image={require('../images/iOS.png')} />
             <Card 
               title="ShortList"
               caption="Put your invites on autopilot."
-              link="https://github.com/andrewsteinmeyer/ShortList"
+              link="https://github.com/andrewsteinmeyer/ShortList_Swift"
               text="Swift"
               image={require('../images/lines.png')} />
           </div>
@@ -183,13 +184,14 @@ const IndexPage = () => (
         <div className="sectionHeader animated slide-in-left">
           <h2>Contact</h2>
         </div>
-        <div className="animated fade-in-up">
+        <div className="contactArea">
           <div className="columns is-centered">
-            <div className="column is-two-fifths">
+            <div className="column is-two-fifths contact-column animated fade-in-up">
               <form className="contact-form">
                 <input placeholder="Name" type="text" name="name" required></input>
                 <input placeholder="Enter email" type="email" name="email" required></input>
                 <textarea placeholder="Your Message" type="text" name="message" required></textarea>
+                <input className="button submit-form is-pulled-right" type="submit" id="submit" value="SUBMIT"></input>
               </form>
             </div>
           </div>
@@ -199,6 +201,15 @@ const IndexPage = () => (
       <section className="Footer has-text-centered">
         <div className="columns is-centered">
           <div className="column is-one-third">
+            <a className="social-icons button" href="https://www.linkedin.com/in/andrewsteinmeyer" rel="noopener noreferrer" target="_blank">
+              <FontAwesomeIcon icon={faLinkedinIn} color="white" />
+            </a>
+            <a className="social-icons button" href="https://github.com/andrewsteinmeyer" rel="noopener noreferrer" target="_blank">
+              <FontAwesomeIcon icon={faGithubAlt} color="white" />
+            </a>
+            <a className="social-icons button" href="mailto:jandrewsteinmeyer@gmail.com" rel="noopener noreferrer" target="_blank">
+              <FontAwesomeIcon icon={faEnvelope} color="white"/>
+            </a>
             <p>ANDREW STEINMEYER © 2020</p>
           </div>
         </div>

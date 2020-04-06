@@ -96,7 +96,7 @@ a {
 }
 
 .Contact {
-  padding-bottom: 50px;
+  padding-bottom: 60px;
   background-color: #4C76E8 !important;
 }
 
@@ -111,9 +111,14 @@ a {
   -webkit-text-fill-color: transparent;
 }
 
+.contact-column {
+  margin: 20px 20px;
+  opacity: 0;
+}
+
 .Footer {
-  padding-top: 20px;
-  padding-bottom: 20px;
+  padding-top: 40px;
+  padding-bottom: 40px;
   background-color: #3452A3 !important;
   color: #7C90C8;
   font-size: 14px;
@@ -224,12 +229,40 @@ input[type=text], input[type=email], textarea {
   color: #fff;
   font-size: 14px;
   padding: 10px 15px;
-  width: 90%;
+  width: 100%;
   margin-bottom: 3px;
 }
 
 textarea {
   min-height: 150px !important;
+}
+
+.social-icons {
+  background-color: transparent;
+  color: white;
+  border-radius: 100%;
+  margin: 8px 10px 25px 8px;
+  height: 45px !important;
+  width: 45px !important;
+  border: 2px solid rgba(255, 255, 255, 0.3);
+}
+
+.submit-form {
+  cursor: pointer;
+  font-size: 16px !important;
+  transition: all 0.5s;
+  color: white !important;
+  border: 2px solid white !important;
+  background-color: transparent !important;
+  text-transform: none !important;
+  font-weight: 400 !important;
+  border-radius: 0px !important;
+}
+
+.submit-form:hover {
+  background-color: #16BAC5 !important;
+  border: 2px solid #16BAC5 !important;
+  color: white !important;
 }
 
 ::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
