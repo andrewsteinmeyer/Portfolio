@@ -1,4 +1,5 @@
 import React from "react"
+import Link from 'gatsby-link'
 
 import Layout from "../components/layout"
 import SEO from "../components/seo"
@@ -23,7 +24,9 @@ const IndexPage = () => (
           <div className="HeroGroup">
             <h1>I'm a full-stack developer.</h1>
             <p>I enjoy making things that make an impact.</p>
-            <button className="show-projects">View my work<FontAwesomeIcon className="project-arrow" icon={faArrowRight} /></button>
+            <Link to="/#my-work" className="button show-projects">
+              View my work<FontAwesomeIcon className="project-arrow" icon={faArrowRight} />
+            </Link>
           </div>
       </div>
 
@@ -180,10 +183,14 @@ const IndexPage = () => (
         <div className="sectionHeader animated slide-in-left">
           <h2>Contact</h2>
         </div>
-        <div className="sectionText animated fade-in-up">
+        <div className="animated fade-in-up">
           <div className="columns is-centered">
-            <div className="column is-four-fifths">
-              <p>I've always had a passion for challenging myself and learning new things.  I hold over a decade of diverse development experience in front-end, back-end and iOS applications.  With a background in business and a career in technology, I get excited about all aspects of product development from strategy and concepting to design and development.</p>
+            <div className="column is-two-fifths">
+              <form className="contact-form">
+                <input placeholder="Name" type="text" name="name" required></input>
+                <input placeholder="Enter email" type="email" name="email" required></input>
+                <input placeholder="Your Message" type="text" name="message" required></input>
+              </form>
             </div>
           </div>
         </div>

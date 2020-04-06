@@ -172,19 +172,22 @@ a {
 
 .show-projects {
   margin-top: 30px;
-  padding: 12px 20px 12px 18px;
+  padding: 14px 20px 14px 18px;
   cursor: pointer;
-  font-size: 20px;
+  font-size: 18px !important;
   transition: all 0.5s;
-  background-color: rgba(255,255,255, 0);
-  color: white;
-  border: 2px solid white;
+  color: white !important;
+  border: 2px solid white !important;
+  background-color: transparent !important;
+  text-transform: none !important;
+  font-weight: 400 !important;
+  border-radius: 0px !important;
 }
 
 .show-projects:hover {
-  background-color: #16BAC5;
-  border: 2px solid #16BAC5;
-  color: white;
+  background-color: #16BAC5 !important;
+  border: 2px solid #16BAC5 !important;
+  color: white !important;
 }
 
 .show-projects:hover > .project-arrow {
@@ -195,7 +198,22 @@ a {
   margin-left: 8px;
   padding-left: 2px;
   padding-right: 2px;
+}
 
+.contact-form {
+  min-width: 95%;
+  width: 100%;
+  max-width: 1200px;
+}
+
+input[type=text], input[type=email], textarea {
+  background: #3452A3;
+  border: 0;
+  color: #fff;
+  font-size: 14px;
+  padding: 10px 15px;
+  width: 100%;
+  margin-bottom: 3px;
 }
 
 @media (max-width: 640px) {
