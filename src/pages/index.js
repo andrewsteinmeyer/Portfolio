@@ -6,6 +6,7 @@ import SEO from "../components/seo"
 import Skill from "../components/Skill"
 import Wedge from "../components/Wedge"
 import Card from "../components/Card"
+import ContactForm from "../components/ContactForm"
 
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faArrowRight, faEnvelope } from '@fortawesome/free-solid-svg-icons'
@@ -187,14 +188,7 @@ const IndexPage = () => (
         <div className="contactArea">
           <div className="columns is-centered">
             <div className="column is-two-fifths contact-column animated fade-in-up">
-              <form method="post" className="contact-form" name="contact-submit" data-netlify="true" data-netlify-honeypot="bot-field">
-                <input type="hidden" name="contact-submit" value="contact-submit" />
-                <input placeholder="Name" type="text" name="name" required></input>
-                <input placeholder="wtf" type="text" name="wtf" required></input>
-                <input placeholder="Enter email" type="email" name="contact-email" required></input>
-                <textarea placeholder="Your Message" type="text" name="message" required></textarea>
-                <input className="button submit-form is-pulled-right" type="submit" id="submit" value="SUBMIT"></input>
-              </form>
+              <ContactForm />
             </div>
           </div>
         </div>
