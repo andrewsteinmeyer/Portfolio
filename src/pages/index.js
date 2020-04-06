@@ -190,6 +190,7 @@ const IndexPage = () => (
               <form method="post" className="contact-form" name="contact-submit" data-netlify="true" data-netlify-honeypot="bot-field">
                 <input type="hidden" name="contact-submit" value="contact-submit" />
                 <input placeholder="Name" type="text" name="name" required></input>
+                <input placeholder="wtf" type="text" name="wtf" required></input>
                 <input placeholder="Enter email" type="email" name="contact-email" required></input>
                 <textarea placeholder="Your Message" type="text" name="message" required></textarea>
                 <input className="button submit-form is-pulled-right" type="submit" id="submit" value="SUBMIT"></input>
