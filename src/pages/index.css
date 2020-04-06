@@ -96,7 +96,7 @@ a {
 }
 
 .Contact {
-  padding-bottom: 10px;
+  padding-bottom: 50px;
   background-color: #4C76E8 !important;
 }
 
@@ -109,6 +109,18 @@ a {
   -webkit-background-clip: text;
   background-clip: text;
   -webkit-text-fill-color: transparent;
+}
+
+.Footer {
+  padding-top: 20px;
+  padding-bottom: 20px;
+  background-color: #3452A3 !important;
+  color: #7C90C8;
+  font-size: 14px;
+}
+
+.copyright {
+  margin: 0px 5px;
 }
 
 .sectionHeader {
@@ -203,7 +215,7 @@ a {
 .contact-form {
   min-width: 95%;
   width: 100%;
-  max-width: 1200px;
+  max-width: 900px;
 }
 
 input[type=text], input[type=email], textarea {
@@ -212,21 +224,25 @@ input[type=text], input[type=email], textarea {
   color: #fff;
   font-size: 14px;
   padding: 10px 15px;
-  width: 100%;
+  width: 90%;
   margin-bottom: 3px;
 }
 
+textarea {
+  min-height: 150px !important;
+}
+
 ::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
-  color: #4C76E8;
+  color: #7C90C8;
   opacity: 1; /* Firefox */
 }
 
 :-ms-input-placeholder { /* Internet Explorer 10-11 */
-  color: #4C76E8;
+  color: #7C90C8;
 }
 
 ::-ms-input-placeholder { /* Microsoft Edge */
-  color: #4C76E8;
+  color: #7C90C8;
 }
 
 @media (max-width: 640px) {

@@ -13,7 +13,7 @@ class Header extends React.Component {
       <nav className="Header navbar" role="navigation" aria-label="main navigation">
       <div className="container nav-container">
         <div className="navbar-brand">
-          <a className="navbar-item" href="/">ANDREW STEINMEYER</a>
+          <img src={require('../images/initials.png')} alt="initials" className="initials" /><a className="navbar-item" href="/">ANDREW STEINMEYER</a>
           {/* <a className="navbar-burger" onClick={this.handleClick} role="button" aria-label="menu" aria-expanded="false" data-target="#navMenu">
             <span aria-hidden="true"></span>
             <span aria-hidden="true"></span>

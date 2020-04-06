@@ -8,7 +8,7 @@ import Wedge from "../components/Wedge"
 import Card from "../components/Card"
 
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faArrowRight } from '@fortawesome/free-solid-svg-icons'
+import { faArrowRight, faCopyright } from '@fortawesome/free-solid-svg-icons'
 
 import $ from 'jquery';
 
@@ -50,7 +50,7 @@ const IndexPage = () => (
           </div>
           <div className="CardGroup">
             <Card 
-              title="Dashboard"
+              title="SmartDash"
               caption="Smart kan-ban task system."
               link="https://github.com/andrewsteinmeyer/Dashboard"
               text="Javascript"
@@ -189,12 +189,21 @@ const IndexPage = () => (
               <form className="contact-form">
                 <input placeholder="Name" type="text" name="name" required></input>
                 <input placeholder="Enter email" type="email" name="email" required></input>
-                <input placeholder="Your Message" type="text" name="message" required></input>
+                <textarea placeholder="Your Message" type="text" name="message" required></textarea>
               </form>
             </div>
           </div>
         </div>
       </section>
+
+      <section className="Footer has-text-centered">
+        <div className="columns is-centered">
+          <div className="column is-one-third">
+            <p>ANDREW STEINMEYER © 2020</p>
+          </div>
+        </div>
+      </section>
+
     </div>
 
   </Layout>
