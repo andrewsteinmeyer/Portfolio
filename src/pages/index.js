@@ -188,7 +188,6 @@ const IndexPage = () => (
           <div className="columns is-centered">
             <div className="column is-two-fifths contact-column animated fade-in-up">
               <form method="post" className="contact-form" name="contact" netlify-honeypot="bot-field" data-netlify="true">
-                <input type="hidden" name="bot-field" />
                 <input placeholder="Name" type="text" name="name" required></input>
                 <input placeholder="Enter email" type="email" name="email" required></input>
                 <textarea placeholder="Your Message" type="text" name="message" required></textarea>
