@@ -187,7 +187,8 @@ const IndexPage = () => (
         <div className="contactArea">
           <div className="columns is-centered">
             <div className="column is-two-fifths contact-column animated fade-in-up">
-              <form className="contact-form">
+              <form method="post" className="contact-form" name="contact" netlify-honeypot="bot-field" data-netlify="true">
+                <input type="hidden" name="bot-field" />
                 <input placeholder="Name" type="text" name="name" required></input>
                 <input placeholder="Enter email" type="email" name="email" required></input>
                 <textarea placeholder="Your Message" type="text" name="message" required></textarea>
@@ -220,39 +221,40 @@ const IndexPage = () => (
   </Layout>
 )
 
-//Jquery to attach animations on scroll
-$(document).ready(function() {
-  // Check if element is scrolled into view
-  function isScrolledIntoView(elem) {
-    var docViewTop = $(window).scrollTop();
-    var docViewBottom = docViewTop + $(window).height();
+if (typeof document !== `undefined`) {
+  //Jquery to attach animations on scroll
+  $(document).ready(function() {
+    // Check if element is scrolled into view
+    function isScrolledIntoView(elem) {
+      var docViewTop = $(window).scrollTop();
+      var docViewBottom = docViewTop + $(window).height();
 
-    var elemTop = $(elem).offset().top;
-    var elemBottom = elemTop + $(elem).height();
+      var elemTop = $(elem).offset().top;
+      var elemBottom = elemTop + $(elem).height();
 
-    return ((elemBottom <= docViewBottom) && (elemTop >= docViewTop));
-  }
-  // If element is scrolled into view, fade it in
-  $(window).scroll(function() {
-    $('.slide-in-left').each(function() {
-      if (isScrolledIntoView(this) === true) {
-        $(this).addClass('fadeInLeft');
-      }
-    });
+      return ((elemBottom <= docViewBottom) && (elemTop >= docViewTop));
+    }
+    // If element is scrolled into view, fade it in
+    $(window).scroll(function() {
+      $('.slide-in-left').each(function() {
+        if (isScrolledIntoView(this) === true) {
+          $(this).addClass('fadeInLeft');
+        }
+      });
 
-    $('.slide-in-right').each(function() {
-      if (isScrolledIntoView(this) === true) {
-        $(this).addClass('fadeInRight');
-      }
-    });
+      $('.slide-in-right').each(function() {
+        if (isScrolledIntoView(this) === true) {
+          $(this).addClass('fadeInRight');
+        }
+      });
 
-    $('.fade-in-up').each(function() {
-      if (isScrolledIntoView(this) === true) {
-        $(this).addClass('fadeInUp');
-      }
+      $('.fade-in-up').each(function() {
+        if (isScrolledIntoView(this) === true) {
+          $(this).addClass('fadeInUp');
+        }
+      });
     });
   });
-});
-
+}
 
 export default IndexPage
