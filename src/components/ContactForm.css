@@ -1,0 +1,36 @@
+
+
+.expand {
+    animation: FadeAnimation 3s forwards ease-in-out;
+}
+  
+#success {
+    height: 0px;
+    overflow: hidden;
+    position: relative;
+    width: 100%;
+    border-radius: 1px !important;
+    font-size: 16px;
+    margin-bottom: 3px;
+}
+
+.success-message {
+    padding: 3px 0px 3px 0px;
+    background-color: #0DD1A2 !important;
+    border: 2px solid #0DD1A2 !important;
+}
+
+@keyframes FadeAnimation {
+    0% {
+        height: 0px;
+    }
+    25% {
+        height: 36px;
+    }
+    75% {
+        height: 36px;
+    }
+    100% {
+        height: 0px;
+    }
+}
