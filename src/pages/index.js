@@ -19,7 +19,7 @@ import 'bulma/css/bulma.css'
 
 const IndexPage = () => (
   <Layout>
-    <SEO title="Home"/>
+    <SEO title="Andrew Steinmeyer"/>
 
     <div>
       <div className="Hero">
