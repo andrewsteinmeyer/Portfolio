@@ -11,7 +11,6 @@ import { useStaticQuery, graphql } from "gatsby"
 import Helmet from 'react-helmet'
 
 import Header from "./header"
-import "./layout.css"
 import 'bulma/css/bulma.css'
 
 if (typeof window !== "undefined") {

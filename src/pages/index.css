@@ -59,27 +59,12 @@ a {
 }
 
 .About {
-  padding-top: 40px;
-  padding-bottom: 100px;
+  padding-top: 30px;
+  padding-bottom: 115px;
 }
 
 .About h2 {
-  margin: 50px 20px 20px 20px;
-  font-size: 36px;
-  text-align: center;
-  font-weight: 700;
-  background: linear-gradient(104.74deg, #050A27 0%,#4A548C 100%);
-  -webkit-background-clip: text;
-  background-clip: text;
-  -webkit-text-fill-color: transparent;
-}
-
-.Skills {
-  padding-bottom: 100px;
-}
-
-.Skills h2 {
-  margin: 50px 20px 20px 20px;
+  margin: 50px 20px 30px 20px;
   font-size: 36px;
   text-align: center;
   font-weight: 700;
@@ -90,9 +75,37 @@ a {
 }
 
 .Projects {
-  padding-top: 10px;
-  padding-bottom: 10px;
+  padding-top: 30px;
+  padding-bottom: 20px;
   background-color: #F5F5F5 !important;
+}
+
+.Projects h2 {
+  margin: 50px 20px 30px 20px;
+  font-size: 36px;
+  text-align: center;
+  font-weight: 700;
+  background: linear-gradient(104.74deg, #050A27 0%,#4A548C 100%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+
+.Skills {
+  padding-top: 30px;
+  padding-bottom: 100px;
+}
+
+.Skills h2 {
+  margin: 50px 20px 30px 20px;
+  font-size: 36px;
+  text-align: center;
+  font-weight: 700;
+  background: linear-gradient(104.74deg, #050A27 0%,#4A548C 100%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
 .Contact {
@@ -101,7 +114,7 @@ a {
 }
 
 .Contact h2 {
-  margin: 50px 20px 20px 20px;
+  margin: 55px 20px 20px 20px;
   font-size: 36px;
   text-align: center;
   font-weight: 700;
@@ -118,7 +131,7 @@ a {
 
 .Footer {
   padding-top: 40px;
-  padding-bottom: 40px;
+  padding-bottom: 50px;
   background-color: #3452A3 !important;
   color: #7C90C8;
   font-size: 14px;
@@ -325,8 +338,47 @@ select:-webkit-autofill:focus {
     background-size: cover;
   }
 
+  .About {
+    padding-top: 15px;
+    padding-bottom: 90px;
+  }
+
   .About h2 {
     font-size: 30px;
+    padding-bottom: 7px;
+  }
+
+  .About p {
+    font-weight: 300px;
+  }
+
+  .Projects {
+    padding-top: 15px;
+    padding-bottom: 1px;
+  }
+
+  .Projects h2 {
+    font-size: 30px;
+    margin-bottom: 0px;
+  }
+
+  .Skills {
+    padding-top: 15px;
+    padding-bottom: 20px;
+  }
+
+  .Skills h2 {
+    padding-top: 3px;
+    font-size: 30px;
+  }
+
+  .Contact {
+    padding-bottom: 90px;
+  }
+
+  .Contact h2 {
+    font-size: 30px;
+    padding-bottom: 5px;
   }
 
   .sectionText p {

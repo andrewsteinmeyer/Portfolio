@@ -56,14 +56,6 @@
     box-shadow: none !important;
 }
 
-.Hero a {
-    transition: 0.8s cubic-bezier(0.2, 0.8, 0.2, 1);
-  }
-  
-  .Hero a:hover {
-    background: white;
-    color: black;
-  }
 
 @media (max-width: 640px) {
     .Header {
@@ -73,6 +65,10 @@
 
     .navbar-menu {
         box-shadow: none !important;
+    }
+
+    .Header a {
+        padding-left: 7px;
     }
 
     .Header .navbar-item a {
