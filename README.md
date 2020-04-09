@@ -2,5 +2,5 @@
 
 **Repo for the portfolio page**
 
-This page is to present my projects.
+This page uses React and Gatsby to present my portfolio.
 
