@@ -76,7 +76,7 @@ a {
 
 .Projects {
   padding-top: 30px;
-  padding-bottom: 20px;
+  padding-bottom: 80px;
   background-color: #F5F5F5 !important;
 }
 
@@ -91,6 +91,10 @@ a {
   -webkit-text-fill-color: transparent;
 }
 
+.more-work {
+  text-align: center !important;
+  font-size: 22px !important;
+}
 
 .Skills {
   padding-top: 30px;
@@ -354,12 +358,19 @@ select:-webkit-autofill:focus {
 
   .Projects {
     padding-top: 15px;
-    padding-bottom: 1px;
+    padding-bottom: 70px;
   }
 
   .Projects h2 {
     font-size: 30px;
     margin-bottom: 0px;
+  }
+
+  .more-work {
+    font-size: 19px !important;
+    margin-right: 15px !important;
+    margin-left: 15px !important;;
+    font-weight: 300px !important;
   }
 
   .Skills {
@@ -386,6 +397,7 @@ select:-webkit-autofill:focus {
     margin-right: 20px;
     margin-left: 20px;
   }
+
 
 } 
 

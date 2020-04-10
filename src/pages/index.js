@@ -7,6 +7,7 @@ import Skill from "../components/Skill"
 import Wedge from "../components/Wedge"
 import Card from "../components/Card"
 import ContactForm from "../components/ContactForm"
+import ExternalLink from "../components/ExternalLink"
 
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faArrowRight, faEnvelope } from '@fortawesome/free-solid-svg-icons'
@@ -64,11 +65,18 @@ const IndexPage = () => (
               text="Swift"
               image={require('../images/iOS.png')} />
             <Card 
-              title="ShortList"
-              caption="Put your invites on autopilot."
-              link="https://github.com/andrewsteinmeyer/ShortList_Swift"
-              text="Swift"
+              title="Portfolio"
+              caption="Repo for this page."
+              link="https://github.com/andrewsteinmeyer/Portfolio"
+              text="React"
               image={require('../images/lines.png')} />
+          </div>
+          <div className="sectionHeader animated fade-in-up">
+            <p className="more-work">Want to see more?
+              <ExternalLink
+                link="https://github.com/andrewsteinmeyer"
+                text="Click here." />
+            </p>
           </div>
         </div>
       </section>

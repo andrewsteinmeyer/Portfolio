@@ -131,7 +131,7 @@
 }
 
 .CardGroup {
-  margin: 50px 40px 100px;
+  margin: 50px 40px 60px;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   grid-gap: 20px;
@@ -153,18 +153,6 @@
   margin-right: 50px;
   margin-left: 50px;
 }
-  
-@media (max-width: 1060px) {
-  .CardGroup {
-    grid-template-columns: repeat(2, 1fr);
-  }
-}
-
-@media (max-width: 720px) {
-  .CardGroup {
-    grid-template-columns: repeat(1, 1fr);
-  }
-}
 
 @media (max-width: 640px) {
   .Cards h2 {
@@ -174,5 +162,13 @@
   .Cards {
     margin-right: 10px;
     margin-left: 10px;
+  }
+
+  .CardGroup {
+    grid-template-columns: repeat(1, 1fr);
+    grid-gap: 40px;
+    padding-bottom: 0px;
+    margin-bottom: 55px;
+    margin-left: 30px;
   }
 }
